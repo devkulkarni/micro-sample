@@ -20,14 +20,7 @@ build:
 
 integrations:
     notifications:
-        - integrationName: www_notif
-          type: slack
-          recipients:
-              - www-notifications
-          on_success: always
-          on_failure: always
-
-    hub:
+    - hub:
         - integrationName: devkulkarinDockerHub
           type: docker
 
