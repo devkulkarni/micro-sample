@@ -10,9 +10,9 @@ build:
    ci:
        - grunt
    on_success:
-       - cd micro-www && docker build -t manishas/micro-www .
+       - cd micro-www && docker build -t devkulkarni/micro-www .
        - cd ..
-       - cd micro-api && docker build -t manishas/micro-api .
+       - cd micro-api && docker build -t devkulkarni/micro-api .
        - docker tag -f devkulkarni/micro-www:latest devkulkarni/micro-www:tip 
        - docker tag -f devkulkarni/micro-api:latest devkulkarni/micro-api:tip
        - docker push devkulkarni/micro-api:tip
